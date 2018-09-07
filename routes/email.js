@@ -35,7 +35,7 @@ router.get('/:email', function (req, res, next) {
       subject: 'Nodemailer',
       text: 'Hello World from Nodemailer',
       html: '<b>Hello World!</b>',
-      attachements: [
+      attachments: [
         {
           // utf-8 string as an attachment
           filename: 'sample1.txt',
@@ -48,12 +48,12 @@ router.get('/:email', function (req, res, next) {
         },
         {
           // file on disk as an attachement
-          finename: 'sample3.txt',
-          path: './email.js' // stream this file
+          finename: 'sample3.jpg',
+          path: 'C:\\Users\\Public\\Pictures\\Sample Pictures\\Koala.jpg' // stream this file
         },
         {
           // filename and content is derived from the file
-          path: './email.js'
+          path: 'C:\\Users\\Public\\Pictures\\Sample Pictures\\Koala.jpg'
         },
         {
           // define custom content type for the attachement
